@@ -1,0 +1,55 @@
+<extend name="Public/base"/>
+
+<block name="body">
+	<div class="main-title">
+		<h2>
+			{$info['id']?'编辑':'新增'}报修
+			<notempty name="pid">
+				[&nbsp;父导航：<a href="{:U('index','pid='.$pid)}">{$parent.title}</a>&nbsp;]
+			</notempty>
+		</h2>
+	</div>
+	<form action="{:U()}" method="post" class="form-horizontal">
+		<div class="form-item">
+			<label class="item-label">保修人<span class="check-tips">（用于显示的姓名）</span></label>
+			<div class="controls">
+				<input type="text" class="text input-large" name="name" value="{$info.name|default=''}">
+			</div>
+		</div>
+		<div class="form-item">
+			<label class="item-label">电话<span class="check-tips">（用于显示的电话）</span></label>
+			<div class="controls">
+				<input type="text" class="text input-large" name="tel" value="{$info.tel|default=''}">
+			</div>
+		</div>
+		<div class="form-item">
+			<label class="item-label">保修地址<span class="check-tips">（用于显示的地址）</span></label>
+			<div class="controls">
+				<input type="text" class="text input-large" name="address" value="{$info.address|default=''}">
+			</div>
+		</div>
+        <div class="form-item">
+            <label class="item-label">标题<span class="check-tips">（用于显示的标题）</span></label>
+            <div class="controls">
+                <input type="text" class="text input-large" name="title" value="{$info.title|default=''}">
+            </div>
+        </div>
+        <div class="form-item">
+            <label class="item-label">保修问题<span class="check-tips">（用于显示的问题）</span></label>
+            <div class="controls">
+                <textarea name="content" class="textarea input-large" >{$info.content|default=''}</textarea>
+            </div>
+        </div>
+		<div class="form-item">
+			<input type="hidden" name="id" value="{$info.id|default=''}">
+			<button class="btn submit-btn ajax-post" id="submit" type="submit" target-form="form-horizontal">确 定</button>
+			<button class="btn btn-return" onclick="javascript:history.back(-1);return false;">返 回</button>
+		</div>
+	</form>
+</block>
+<block name="script">
+<script type="text/javascript" charset="utf-8">
+	//导航高亮
+	highlight_subnav('{:U('index')}');
+</script>
+</block>

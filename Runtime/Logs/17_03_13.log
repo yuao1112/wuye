@@ -1,0 +1,59 @@
+[ 2017-03-13T01:00:13+08:00 ] 127.0.0.1 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000341s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000650s ]
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.006194s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( `username` = 'admin' ) LIMIT 1   [ RunTime:0.000324s ]
+SQL: UPDATE `onethink_ucenter_member` SET `last_login_time`=1489338013,`last_login_ip`='2130706433' WHERE ( `id` = 1 ) [ RunTime:0.000340s ]
+SQL: SHOW COLUMNS FROM `onethink_member` [ RunTime:0.003237s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status` FROM `onethink_member` WHERE ( `uid` = 1 ) LIMIT 1   [ RunTime:0.000254s ]
+SQL: SHOW COLUMNS FROM `onethink_action` [ RunTime:0.003228s ]
+SQL: SELECT * FROM `onethink_action` WHERE ( `name` = 'user_login' ) LIMIT 1   [ RunTime:0.000217s ]
+SQL: SHOW COLUMNS FROM `onethink_action_log` [ RunTime:0.003690s ]
+SQL: INSERT INTO `onethink_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES (1,1,2130706433,'member',1,1489338013,'admin在2017-03-13 01:00登录了后台') [ RunTime:0.000284s ]
+SQL: SELECT * FROM `onethink_action` WHERE ( `name` = 'user_login' ) LIMIT 1   [ RunTime:0.000170s ]
+NOTIC: [8] Undefined offset: 1 D:\phpStudy\WWW\2017-03-12-wuye\wwwroot\Application\Common\Common\function.php 第 665 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given D:\phpStudy\WWW\2017-03-12-wuye\wwwroot\Application\Common\Common\function.php 第 665 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_action_log` WHERE ( `action_id` = 1 ) AND ( `user_id` = 1 ) AND ( `create_time` > 1489251613 ) LIMIT 1   [ RunTime:0.000192s ]
+SQL: UPDATE `onethink_member` SET `login`=`login`+1,`last_login_time`=1489338013,`last_login_ip`='2130706433' WHERE ( `uid` = 1 ) [ RunTime:0.000246s ]
+
+[ 2017-03-13T01:02:54+08:00 ] 127.0.0.1 /index.php?s=/admin/index/index1.html
+ERR: 非法操作:index1
+
+[ 2017-03-13T08:52:01+08:00 ] 127.0.0.1 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000657s ]
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.069760s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( `username` = 'admin' ) LIMIT 1   [ RunTime:0.002599s ]
+SQL: UPDATE `onethink_ucenter_member` SET `last_login_time`=1489366321,`last_login_ip`='2130706433' WHERE ( `id` = 1 ) [ RunTime:0.002099s ]
+SQL: SHOW COLUMNS FROM `onethink_member` [ RunTime:0.024684s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status` FROM `onethink_member` WHERE ( `uid` = 1 ) LIMIT 1   [ RunTime:0.000808s ]
+SQL: SHOW COLUMNS FROM `onethink_action` [ RunTime:0.015908s ]
+SQL: SELECT * FROM `onethink_action` WHERE ( `name` = 'user_login' ) LIMIT 1   [ RunTime:0.001070s ]
+SQL: SHOW COLUMNS FROM `onethink_action_log` [ RunTime:0.018367s ]
+SQL: INSERT INTO `onethink_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES (1,1,2130706433,'member',1,1489366321,'admin在2017-03-13 08:52登录了后台') [ RunTime:0.032304s ]
+SQL: SELECT * FROM `onethink_action` WHERE ( `name` = 'user_login' ) LIMIT 1   [ RunTime:0.000687s ]
+NOTIC: [8] Undefined offset: 1 D:\phpStudy\WWW\2017-03-12-wuye\wwwroot\Application\Common\Common\function.php 第 665 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given D:\phpStudy\WWW\2017-03-12-wuye\wwwroot\Application\Common\Common\function.php 第 665 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_action_log` WHERE ( `action_id` = 1 ) AND ( `user_id` = 1 ) AND ( `create_time` > 1489279921 ) LIMIT 1   [ RunTime:0.056475s ]
+SQL: UPDATE `onethink_member` SET `login`=`login`+1,`last_login_time`=1489366321,`last_login_ip`='2130706433' WHERE ( `uid` = 1 ) [ RunTime:0.001519s ]
+
+[ 2017-03-13T08:58:47+08:00 ] 127.0.0.1 /index.php?s=/Admin/property/1index.html
+ERR: 非法操作:1index
+
+[ 2017-03-13T08:59:53+08:00 ] 127.0.0.1 /index.php?s=/Admin/property/we
+ERR: 非法操作:we
+
+[ 2017-03-13T09:01:57+08:00 ] 127.0.0.1 /index.php?s=/Admin/property/we
+ERR: 非法操作:we
+
+[ 2017-03-13T09:01:57+08:00 ] 127.0.0.1 /index.php?s=/Admin/property/we
+ERR: 非法操作:we
+
+[ 2017-03-13T09:01:58+08:00 ] 127.0.0.1 /index.php?s=/Admin/property/we
+ERR: 非法操作:we
+
+[ 2017-03-13T09:01:58+08:00 ] 127.0.0.1 /index.php?s=/Admin/property/we
+ERR: 非法操作:we
+
