@@ -57,3 +57,645 @@ ERR: 非法操作:we
 [ 2017-03-13T09:01:58+08:00 ] 127.0.0.1 /index.php?s=/Admin/property/we
 ERR: 非法操作:we
 
+[ 2017-03-13T10:41:33+08:00 ] 127.0.0.1 /index.php?s=/Admin/Category/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000531s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000827s ]
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.006619s ]
+SQL: SELECT * FROM `onethink_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000460s ]
+SQL: SELECT `id` FROM `onethink_menu` WHERE ( url like '%Category/add%' ) LIMIT 1   [ RunTime:0.000302s ]
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.003209s ]
+SQL: SELECT `id`,`pid`,`title` FROM `onethink_menu` WHERE ( id=82 ) LIMIT 1   [ RunTime:0.000298s ]
+SQL: SELECT `id`,`pid`,`title` FROM `onethink_menu` WHERE ( id=80 ) LIMIT 1   [ RunTime:0.000241s ]
+SQL: SELECT `id`,`pid`,`title` FROM `onethink_menu` WHERE ( id=68 ) LIMIT 1   [ RunTime:0.000239s ]
+SQL: SELECT DISTINCT  `group` FROM `onethink_menu` WHERE ( pid = 68 )  [ RunTime:0.000413s ]
+SQL: SELECT `id`,`url` FROM `onethink_menu` WHERE ( `pid` = 68 ) AND ( `hide` = 0 )  [ RunTime:0.000294s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `onethink_menu` WHERE ( `group` = '系统设置' ) AND ( `pid` = 68 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000483s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `onethink_menu` WHERE ( `group` = '' ) AND ( `pid` = 68 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000334s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `onethink_menu` WHERE ( `group` = '数据备份' ) AND ( `pid` = 68 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000357s ]
+SQL: SHOW COLUMNS FROM `onethink_category` [ RunTime:0.003839s ]
+SQL: SELECT * FROM `onethink_category` WHERE ( `name` = 'repair' ) LIMIT 1   [ RunTime:0.000395s ]
+NOTIC: [2] Missing argument 1 for arr2str() D:\phpStudy\WWW\2017-03-12-wuye\wwwroot\Application\Common\Common\function.php 第 61 行.
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\2017-03-12-wuye\wwwroot\Application\Common\Common\function.php 第 62 行.
+NOTIC: [2] implode(): Invalid arguments passed D:\phpStudy\WWW\2017-03-12-wuye\wwwroot\Application\Common\Common\function.php 第 62 行.
+NOTIC: [2] Missing argument 1 for arr2str() D:\phpStudy\WWW\2017-03-12-wuye\wwwroot\Application\Common\Common\function.php 第 61 行.
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\2017-03-12-wuye\wwwroot\Application\Common\Common\function.php 第 62 行.
+NOTIC: [2] implode(): Invalid arguments passed D:\phpStudy\WWW\2017-03-12-wuye\wwwroot\Application\Common\Common\function.php 第 62 行.
+NOTIC: [2] json_encode() expects at least 1 parameter, 0 given D:\phpStudy\WWW\2017-03-12-wuye\wwwroot\ThinkPHP\Library\Think\Model.class.php 第 981 行.
+SQL: INSERT INTO `onethink_category` (`title`,`name`,`allow_publish`,`check`,`model`,`icon`,`display`,`reply`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`id`,`pid`,`create_time`,`update_time`,`status`) VALUES ('报修管理','repair',0,0,'2',1,1,1,0,10,'','','','','','','',0,0,1489372893,1489372893,1) [ RunTime:0.000549s ]
+SQL: SHOW COLUMNS FROM `onethink_action` [ RunTime:0.003756s ]
+SQL: SELECT * FROM `onethink_action` WHERE ( `name` = 'update_category' ) LIMIT 1   [ RunTime:0.000314s ]
+SQL: SHOW COLUMNS FROM `onethink_action_log` [ RunTime:0.003608s ]
+SQL: INSERT INTO `onethink_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES (11,1,2130706433,'category',39,1489372893,'操作url：/index.php?s=/Admin/Category/add.html') [ RunTime:0.000381s ]
+
+[ 2017-03-13T10:43:04+08:00 ] 127.0.0.1 /index.php?s=/Admin/Category/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000704s ]
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.006306s ]
+SQL: SELECT * FROM `onethink_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000451s ]
+SQL: SELECT `id` FROM `onethink_menu` WHERE ( url like '%Category/add%' ) LIMIT 1   [ RunTime:0.000311s ]
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.003583s ]
+SQL: SELECT `id`,`pid`,`title` FROM `onethink_menu` WHERE ( id=82 ) LIMIT 1   [ RunTime:0.000286s ]
+SQL: SELECT `id`,`pid`,`title` FROM `onethink_menu` WHERE ( id=80 ) LIMIT 1   [ RunTime:0.000294s ]
+SQL: SELECT `id`,`pid`,`title` FROM `onethink_menu` WHERE ( id=68 ) LIMIT 1   [ RunTime:0.000229s ]
+SQL: SELECT DISTINCT  `group` FROM `onethink_menu` WHERE ( pid = 68 )  [ RunTime:0.000455s ]
+SQL: SELECT `id`,`url` FROM `onethink_menu` WHERE ( `pid` = 68 ) AND ( `hide` = 0 )  [ RunTime:0.000306s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `onethink_menu` WHERE ( `group` = '系统设置' ) AND ( `pid` = 68 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000347s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `onethink_menu` WHERE ( `group` = '' ) AND ( `pid` = 68 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000353s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `onethink_menu` WHERE ( `group` = '数据备份' ) AND ( `pid` = 68 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000375s ]
+SQL: SHOW COLUMNS FROM `onethink_category` [ RunTime:0.003923s ]
+SQL: SELECT * FROM `onethink_category` WHERE ( `name` = 'notice' ) LIMIT 1   [ RunTime:0.000314s ]
+NOTIC: [2] Missing argument 1 for arr2str() D:\phpStudy\WWW\2017-03-12-wuye\wwwroot\Application\Common\Common\function.php 第 61 行.
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\2017-03-12-wuye\wwwroot\Application\Common\Common\function.php 第 62 行.
+NOTIC: [2] implode(): Invalid arguments passed D:\phpStudy\WWW\2017-03-12-wuye\wwwroot\Application\Common\Common\function.php 第 62 行.
+NOTIC: [2] json_encode() expects at least 1 parameter, 0 given D:\phpStudy\WWW\2017-03-12-wuye\wwwroot\ThinkPHP\Library\Think\Model.class.php 第 981 行.
+SQL: INSERT INTO `onethink_category` (`title`,`name`,`allow_publish`,`check`,`model`,`type`,`icon`,`display`,`reply`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`id`,`pid`,`create_time`,`update_time`,`status`) VALUES ('小区通知','notice',1,0,'2','2,3',2,1,1,0,10,'','','','','','','',0,39,1489372984,1489372984,1) [ RunTime:0.000303s ]
+SQL: SHOW COLUMNS FROM `onethink_action` [ RunTime:0.003631s ]
+SQL: SELECT * FROM `onethink_action` WHERE ( `name` = 'update_category' ) LIMIT 1   [ RunTime:0.000288s ]
+SQL: SHOW COLUMNS FROM `onethink_action_log` [ RunTime:0.003598s ]
+SQL: INSERT INTO `onethink_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES (11,1,2130706433,'category',40,1489372984,'操作url：/index.php?s=/Admin/Category/add.html') [ RunTime:0.000312s ]
+
+[ 2017-03-13T10:54:21+08:00 ] 127.0.0.1 /index.php?s=/Home/User/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000749s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.003439s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE ( `status` = 1 )  [ RunTime:0.000329s ]
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.004049s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( `username` = 'admin' ) LIMIT 1   [ RunTime:0.000342s ]
+SQL: UPDATE `onethink_ucenter_member` SET `last_login_time`=1489373661,`last_login_ip`='2130706433' WHERE ( `id` = 1 ) [ RunTime:0.000332s ]
+SQL: SHOW COLUMNS FROM `onethink_member` [ RunTime:0.003796s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status` FROM `onethink_member` WHERE ( `uid` = 1 ) LIMIT 1   [ RunTime:0.000285s ]
+SQL: UPDATE `onethink_member` SET `login`=`login`+1,`last_login_time`=1489373661,`last_login_ip`='2130706433' WHERE ( `uid` = 1 ) [ RunTime:0.000324s ]
+SQL: SHOW COLUMNS FROM `onethink_action` [ RunTime:0.003672s ]
+SQL: SELECT * FROM `onethink_action` WHERE ( `name` = 'user_login' ) LIMIT 1   [ RunTime:0.000300s ]
+SQL: SHOW COLUMNS FROM `onethink_action_log` [ RunTime:0.003437s ]
+SQL: INSERT INTO `onethink_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES (1,1,2130706433,'member',1,1489373661,'admin在2017-03-13 10:54登录了后台') [ RunTime:0.000524s ]
+SQL: SELECT * FROM `onethink_action` WHERE ( `name` = 'user_login' ) LIMIT 1   [ RunTime:0.000276s ]
+NOTIC: [8] Undefined offset: 1 D:\phpStudy\WWW\2017-03-12-wuye\wwwroot\Application\Common\Common\function.php 第 665 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given D:\phpStudy\WWW\2017-03-12-wuye\wwwroot\Application\Common\Common\function.php 第 665 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_action_log` WHERE ( `action_id` = 1 ) AND ( `user_id` = 1 ) AND ( `create_time` > 1489287261 ) LIMIT 1   [ RunTime:0.000305s ]
+
+[ 2017-03-13T11:56:50+08:00 ] 127.0.0.1 /index.php?s=/Home/notice/notice.html
+ERR: 模板不存在:./Application/Home/View/default/Notice/notice.html
+
+[ 2017-03-13T11:57:25+08:00 ] 127.0.0.1 /index.php?s=/Home/notice/notice.html
+ERR: 模板不存在:./Application/Home/View/default/Notice/notice.html
+
+[ 2017-03-13T11:57:26+08:00 ] 127.0.0.1 /index.php?s=/Home/notice/notice.html
+ERR: 模板不存在:./Application/Home/View/default/Notice/notice.html
+
+[ 2017-03-13T11:57:26+08:00 ] 127.0.0.1 /index.php?s=/Home/notice/notice.html
+ERR: 模板不存在:./Application/Home/View/default/Notice/notice.html
+
+[ 2017-03-13T11:57:27+08:00 ] 127.0.0.1 /index.php?s=/Home/notice/notice.html
+ERR: 模板不存在:./Application/Home/View/default/Notice/notice.html
+
+[ 2017-03-13T11:57:27+08:00 ] 127.0.0.1 /index.php?s=/Home/notice/notice.html
+ERR: 模板不存在:./Application/Home/View/default/Notice/notice.html
+
+[ 2017-03-13T11:57:27+08:00 ] 127.0.0.1 /index.php?s=/Home/notice/notice.html
+ERR: 模板不存在:./Application/Home/View/default/Notice/notice.html
+
+[ 2017-03-13T11:57:45+08:00 ] 127.0.0.1 /index.php?s=/Home/notice/notice.html
+ERR: 模板不存在:./Application/Home/View/default/Notice/notice.html
+
+[ 2017-03-13T11:57:46+08:00 ] 127.0.0.1 /index.php?s=/Home/notice/notice.html
+ERR: 模板不存在:./Application/Home/View/default/Notice/notice.html
+
+[ 2017-03-13T11:57:49+08:00 ] 127.0.0.1 /index.php?s=/Home/notice/notice.html
+ERR: 模板不存在:./Application/Home/View/default/Notice/notice.html
+
+[ 2017-03-13T13:02:12+08:00 ] 127.0.0.1 /index.php?s=/Admin/Category/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000528s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001064s ]
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.007073s ]
+SQL: SELECT * FROM `onethink_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000394s ]
+SQL: SELECT `id` FROM `onethink_menu` WHERE ( url like '%Category/edit%' ) LIMIT 1   [ RunTime:0.000309s ]
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.003270s ]
+SQL: SELECT `id`,`pid`,`title` FROM `onethink_menu` WHERE ( id=81 ) LIMIT 1   [ RunTime:0.000207s ]
+SQL: SELECT `id`,`pid`,`title` FROM `onethink_menu` WHERE ( id=80 ) LIMIT 1   [ RunTime:0.000205s ]
+SQL: SELECT `id`,`pid`,`title` FROM `onethink_menu` WHERE ( id=68 ) LIMIT 1   [ RunTime:0.000239s ]
+SQL: SELECT DISTINCT  `group` FROM `onethink_menu` WHERE ( pid = 68 )  [ RunTime:0.000353s ]
+SQL: SELECT `id`,`url` FROM `onethink_menu` WHERE ( `pid` = 68 ) AND ( `hide` = 0 )  [ RunTime:0.000250s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `onethink_menu` WHERE ( `group` = '系统设置' ) AND ( `pid` = 68 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000336s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `onethink_menu` WHERE ( `group` = '' ) AND ( `pid` = 68 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000270s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `onethink_menu` WHERE ( `group` = '数据备份' ) AND ( `pid` = 68 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000383s ]
+SQL: SHOW COLUMNS FROM `onethink_category` [ RunTime:0.004283s ]
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\2017-03-12-wuye\wwwroot\ThinkPHP\Library\Think\Model.class.php 第 1040 行.
+NOTIC: [8] Undefined index: meta_title D:\phpStudy\WWW\2017-03-12-wuye\wwwroot\ThinkPHP\Library\Think\Model.class.php 第 1040 行.
+NOTIC: [8] Undefined index: keywords D:\phpStudy\WWW\2017-03-12-wuye\wwwroot\ThinkPHP\Library\Think\Model.class.php 第 1040 行.
+NOTIC: [8] Undefined index: meta_title D:\phpStudy\WWW\2017-03-12-wuye\wwwroot\ThinkPHP\Library\Think\Model.class.php 第 1040 行.
+NOTIC: [2] Missing argument 1 for arr2str() D:\phpStudy\WWW\2017-03-12-wuye\wwwroot\Application\Common\Common\function.php 第 61 行.
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\2017-03-12-wuye\wwwroot\Application\Common\Common\function.php 第 62 行.
+NOTIC: [2] implode(): Invalid arguments passed D:\phpStudy\WWW\2017-03-12-wuye\wwwroot\Application\Common\Common\function.php 第 62 行.
+NOTIC: [2] Missing argument 1 for arr2str() D:\phpStudy\WWW\2017-03-12-wuye\wwwroot\Application\Common\Common\function.php 第 61 行.
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\2017-03-12-wuye\wwwroot\Application\Common\Common\function.php 第 62 行.
+NOTIC: [2] implode(): Invalid arguments passed D:\phpStudy\WWW\2017-03-12-wuye\wwwroot\Application\Common\Common\function.php 第 62 行.
+NOTIC: [2] Missing argument 1 for arr2str() D:\phpStudy\WWW\2017-03-12-wuye\wwwroot\Application\Common\Common\function.php 第 61 行.
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\2017-03-12-wuye\wwwroot\Application\Common\Common\function.php 第 62 行.
+NOTIC: [2] implode(): Invalid arguments passed D:\phpStudy\WWW\2017-03-12-wuye\wwwroot\Application\Common\Common\function.php 第 62 行.
+NOTIC: [2] json_encode() expects at least 1 parameter, 0 given D:\phpStudy\WWW\2017-03-12-wuye\wwwroot\ThinkPHP\Library\Think\Model.class.php 第 981 行.
+SQL: UPDATE `onethink_category` SET `sort`=0,`title`='物业管理',`update_time`=1489381332,`status`=1 WHERE ( `id` = 39 ) [ RunTime:0.000355s ]
+SQL: SHOW COLUMNS FROM `onethink_action` [ RunTime:0.003832s ]
+SQL: SELECT * FROM `onethink_action` WHERE ( `name` = 'update_category' ) LIMIT 1   [ RunTime:0.000267s ]
+SQL: SHOW COLUMNS FROM `onethink_action_log` [ RunTime:0.003443s ]
+SQL: INSERT INTO `onethink_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES (11,1,2130706433,'category',39,1489381332,'操作url：/index.php?s=/Admin/Category/edit.html') [ RunTime:0.000294s ]
+
+[ 2017-03-13T13:02:51+08:00 ] 127.0.0.1 /index.php?s=/Admin/Category/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000347s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000696s ]
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.006901s ]
+SQL: SELECT * FROM `onethink_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000411s ]
+SQL: SELECT `id` FROM `onethink_menu` WHERE ( url like '%Category/add%' ) LIMIT 1   [ RunTime:0.000331s ]
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.003447s ]
+SQL: SELECT `id`,`pid`,`title` FROM `onethink_menu` WHERE ( id=82 ) LIMIT 1   [ RunTime:0.000302s ]
+SQL: SELECT `id`,`pid`,`title` FROM `onethink_menu` WHERE ( id=80 ) LIMIT 1   [ RunTime:0.000260s ]
+SQL: SELECT `id`,`pid`,`title` FROM `onethink_menu` WHERE ( id=68 ) LIMIT 1   [ RunTime:0.000259s ]
+SQL: SELECT DISTINCT  `group` FROM `onethink_menu` WHERE ( pid = 68 )  [ RunTime:0.000411s ]
+SQL: SELECT `id`,`url` FROM `onethink_menu` WHERE ( `pid` = 68 ) AND ( `hide` = 0 )  [ RunTime:0.000324s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `onethink_menu` WHERE ( `group` = '系统设置' ) AND ( `pid` = 68 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000358s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `onethink_menu` WHERE ( `group` = '' ) AND ( `pid` = 68 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000371s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `onethink_menu` WHERE ( `group` = '数据备份' ) AND ( `pid` = 68 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000338s ]
+SQL: SHOW COLUMNS FROM `onethink_category` [ RunTime:0.003338s ]
+SQL: SELECT * FROM `onethink_category` WHERE ( `name` = 'active' ) LIMIT 1   [ RunTime:0.000279s ]
+NOTIC: [2] Missing argument 1 for arr2str() D:\phpStudy\WWW\2017-03-12-wuye\wwwroot\Application\Common\Common\function.php 第 61 行.
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\2017-03-12-wuye\wwwroot\Application\Common\Common\function.php 第 62 行.
+NOTIC: [2] implode(): Invalid arguments passed D:\phpStudy\WWW\2017-03-12-wuye\wwwroot\Application\Common\Common\function.php 第 62 行.
+NOTIC: [2] json_encode() expects at least 1 parameter, 0 given D:\phpStudy\WWW\2017-03-12-wuye\wwwroot\ThinkPHP\Library\Think\Model.class.php 第 981 行.
+SQL: INSERT INTO `onethink_category` (`title`,`name`,`allow_publish`,`check`,`model`,`type`,`icon`,`display`,`reply`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`id`,`pid`,`create_time`,`update_time`,`status`) VALUES ('小区活动','active',1,0,'2','2,3',0,1,1,0,10,'','','','','','','',0,39,1489381371,1489381371,1) [ RunTime:0.000282s ]
+NOTIC: [2] unlink(./Runtime/Temp/cbc58bd3cdec352c980d0ad729b5c219.php): No such file or directory D:\phpStudy\WWW\2017-03-12-wuye\wwwroot\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+SQL: SHOW COLUMNS FROM `onethink_action` [ RunTime:0.003011s ]
+SQL: SELECT * FROM `onethink_action` WHERE ( `name` = 'update_category' ) LIMIT 1   [ RunTime:0.000275s ]
+SQL: SHOW COLUMNS FROM `onethink_action_log` [ RunTime:0.003351s ]
+SQL: INSERT INTO `onethink_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES (11,1,2130706433,'category',41,1489381371,'操作url：/index.php?s=/Admin/Category/add.html') [ RunTime:0.000243s ]
+
+[ 2017-03-13T13:03:34+08:00 ] 127.0.0.1 /index.php?s=/Admin/Category/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000750s ]
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.006657s ]
+SQL: SELECT * FROM `onethink_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000380s ]
+SQL: SELECT `id` FROM `onethink_menu` WHERE ( url like '%Category/add%' ) LIMIT 1   [ RunTime:0.000304s ]
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.003561s ]
+SQL: SELECT `id`,`pid`,`title` FROM `onethink_menu` WHERE ( id=82 ) LIMIT 1   [ RunTime:0.000244s ]
+SQL: SELECT `id`,`pid`,`title` FROM `onethink_menu` WHERE ( id=80 ) LIMIT 1   [ RunTime:0.000218s ]
+SQL: SELECT `id`,`pid`,`title` FROM `onethink_menu` WHERE ( id=68 ) LIMIT 1   [ RunTime:0.000304s ]
+SQL: SELECT DISTINCT  `group` FROM `onethink_menu` WHERE ( pid = 68 )  [ RunTime:0.000451s ]
+SQL: SELECT `id`,`url` FROM `onethink_menu` WHERE ( `pid` = 68 ) AND ( `hide` = 0 )  [ RunTime:0.000312s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `onethink_menu` WHERE ( `group` = '系统设置' ) AND ( `pid` = 68 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000380s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `onethink_menu` WHERE ( `group` = '' ) AND ( `pid` = 68 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000336s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `onethink_menu` WHERE ( `group` = '数据备份' ) AND ( `pid` = 68 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000317s ]
+SQL: SHOW COLUMNS FROM `onethink_category` [ RunTime:0.003720s ]
+SQL: SELECT * FROM `onethink_category` WHERE ( `name` = 'service' ) LIMIT 1   [ RunTime:0.000316s ]
+NOTIC: [2] Missing argument 1 for arr2str() D:\phpStudy\WWW\2017-03-12-wuye\wwwroot\Application\Common\Common\function.php 第 61 行.
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\2017-03-12-wuye\wwwroot\Application\Common\Common\function.php 第 62 行.
+NOTIC: [2] implode(): Invalid arguments passed D:\phpStudy\WWW\2017-03-12-wuye\wwwroot\Application\Common\Common\function.php 第 62 行.
+NOTIC: [2] Missing argument 1 for arr2str() D:\phpStudy\WWW\2017-03-12-wuye\wwwroot\Application\Common\Common\function.php 第 61 行.
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\2017-03-12-wuye\wwwroot\Application\Common\Common\function.php 第 62 行.
+NOTIC: [2] implode(): Invalid arguments passed D:\phpStudy\WWW\2017-03-12-wuye\wwwroot\Application\Common\Common\function.php 第 62 行.
+NOTIC: [2] json_encode() expects at least 1 parameter, 0 given D:\phpStudy\WWW\2017-03-12-wuye\wwwroot\ThinkPHP\Library\Think\Model.class.php 第 981 行.
+SQL: INSERT INTO `onethink_category` (`title`,`name`,`allow_publish`,`check`,`model`,`icon`,`display`,`reply`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`id`,`pid`,`create_time`,`update_time`,`status`) VALUES ('便民服务','service',1,0,'2',0,1,1,0,10,'','','','','','','',0,39,1489381414,1489381414,1) [ RunTime:0.000287s ]
+NOTIC: [2] unlink(./Runtime/Temp/cbc58bd3cdec352c980d0ad729b5c219.php): No such file or directory D:\phpStudy\WWW\2017-03-12-wuye\wwwroot\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+SQL: SHOW COLUMNS FROM `onethink_action` [ RunTime:0.003530s ]
+SQL: SELECT * FROM `onethink_action` WHERE ( `name` = 'update_category' ) LIMIT 1   [ RunTime:0.000277s ]
+SQL: SHOW COLUMNS FROM `onethink_action_log` [ RunTime:0.003634s ]
+SQL: INSERT INTO `onethink_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES (11,1,2130706433,'category',42,1489381414,'操作url：/index.php?s=/Admin/Category/add.html') [ RunTime:0.000292s ]
+
+[ 2017-03-13T13:05:05+08:00 ] 127.0.0.1 /index.php?s=/Admin/Category/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000422s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000771s ]
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.006572s ]
+SQL: SELECT * FROM `onethink_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000376s ]
+SQL: SELECT `id` FROM `onethink_menu` WHERE ( url like '%Category/add%' ) LIMIT 1   [ RunTime:0.000319s ]
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.003447s ]
+SQL: SELECT `id`,`pid`,`title` FROM `onethink_menu` WHERE ( id=82 ) LIMIT 1   [ RunTime:0.000259s ]
+SQL: SELECT `id`,`pid`,`title` FROM `onethink_menu` WHERE ( id=80 ) LIMIT 1   [ RunTime:0.000184s ]
+SQL: SELECT `id`,`pid`,`title` FROM `onethink_menu` WHERE ( id=68 ) LIMIT 1   [ RunTime:0.000170s ]
+SQL: SELECT DISTINCT  `group` FROM `onethink_menu` WHERE ( pid = 68 )  [ RunTime:0.000441s ]
+SQL: SELECT `id`,`url` FROM `onethink_menu` WHERE ( `pid` = 68 ) AND ( `hide` = 0 )  [ RunTime:0.000232s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `onethink_menu` WHERE ( `group` = '系统设置' ) AND ( `pid` = 68 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000431s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `onethink_menu` WHERE ( `group` = '' ) AND ( `pid` = 68 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000267s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `onethink_menu` WHERE ( `group` = '数据备份' ) AND ( `pid` = 68 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000299s ]
+SQL: SHOW COLUMNS FROM `onethink_category` [ RunTime:0.003820s ]
+SQL: SELECT * FROM `onethink_category` WHERE ( `name` = 'business' ) LIMIT 1   [ RunTime:0.000259s ]
+NOTIC: [2] Missing argument 1 for arr2str() D:\phpStudy\WWW\2017-03-12-wuye\wwwroot\Application\Common\Common\function.php 第 61 行.
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\2017-03-12-wuye\wwwroot\Application\Common\Common\function.php 第 62 行.
+NOTIC: [2] implode(): Invalid arguments passed D:\phpStudy\WWW\2017-03-12-wuye\wwwroot\Application\Common\Common\function.php 第 62 行.
+NOTIC: [2] Missing argument 1 for arr2str() D:\phpStudy\WWW\2017-03-12-wuye\wwwroot\Application\Common\Common\function.php 第 61 行.
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\2017-03-12-wuye\wwwroot\Application\Common\Common\function.php 第 62 行.
+NOTIC: [2] implode(): Invalid arguments passed D:\phpStudy\WWW\2017-03-12-wuye\wwwroot\Application\Common\Common\function.php 第 62 行.
+NOTIC: [2] json_encode() expects at least 1 parameter, 0 given D:\phpStudy\WWW\2017-03-12-wuye\wwwroot\ThinkPHP\Library\Think\Model.class.php 第 981 行.
+SQL: INSERT INTO `onethink_category` (`title`,`name`,`allow_publish`,`check`,`model`,`icon`,`display`,`reply`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`id`,`pid`,`create_time`,`update_time`,`status`) VALUES ('商家活动','business',1,0,'2',0,1,1,0,10,'','','','','','','',0,39,1489381505,1489381505,1) [ RunTime:0.000228s ]
+NOTIC: [2] unlink(./Runtime/Temp/cbc58bd3cdec352c980d0ad729b5c219.php): No such file or directory D:\phpStudy\WWW\2017-03-12-wuye\wwwroot\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+SQL: SHOW COLUMNS FROM `onethink_action` [ RunTime:0.003218s ]
+SQL: SELECT * FROM `onethink_action` WHERE ( `name` = 'update_category' ) LIMIT 1   [ RunTime:0.000274s ]
+SQL: SHOW COLUMNS FROM `onethink_action_log` [ RunTime:0.003703s ]
+SQL: INSERT INTO `onethink_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES (11,1,2130706433,'category',43,1489381505,'操作url：/index.php?s=/Admin/Category/add.html') [ RunTime:0.000247s ]
+
+[ 2017-03-13T13:09:59+08:00 ] 127.0.0.1 /index.php?s=/Admin/Config/save.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000646s ]
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.006058s ]
+SQL: SELECT * FROM `onethink_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000416s ]
+SQL: SELECT `id` FROM `onethink_menu` WHERE ( url like '%Config/save%' ) LIMIT 1   [ RunTime:0.000302s ]
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.004466s ]
+SQL: SELECT `id`,`pid`,`title` FROM `onethink_menu` WHERE ( id=74 ) LIMIT 1   [ RunTime:0.000512s ]
+SQL: SELECT `id`,`pid`,`title` FROM `onethink_menu` WHERE ( id=70 ) LIMIT 1   [ RunTime:0.000257s ]
+SQL: SELECT `id`,`pid`,`title` FROM `onethink_menu` WHERE ( id=68 ) LIMIT 1   [ RunTime:0.000263s ]
+SQL: SELECT DISTINCT  `group` FROM `onethink_menu` WHERE ( pid = 68 )  [ RunTime:0.000555s ]
+SQL: SELECT `id`,`url` FROM `onethink_menu` WHERE ( `pid` = 68 ) AND ( `hide` = 0 )  [ RunTime:0.000384s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `onethink_menu` WHERE ( `group` = '系统设置' ) AND ( `pid` = 68 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000406s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `onethink_menu` WHERE ( `group` = '' ) AND ( `pid` = 68 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000320s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `onethink_menu` WHERE ( `group` = '数据备份' ) AND ( `pid` = 68 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000319s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.003491s ]
+SQL: UPDATE `onethink_config` SET `value`='Wechat 物业管理系统' WHERE ( `name` = 'WEB_SITE_TITLE' ) [ RunTime:0.000384s ]
+SQL: UPDATE `onethink_config` SET `value`='OneThink内容管理框架' WHERE ( `name` = 'WEB_SITE_DESCRIPTION' ) [ RunTime:0.000240s ]
+SQL: UPDATE `onethink_config` SET `value`='1' WHERE ( `name` = 'WEB_SITE_CLOSE' ) [ RunTime:0.000248s ]
+SQL: UPDATE `onethink_config` SET `value`='ThinkPHP,OneThink' WHERE ( `name` = 'WEB_SITE_KEYWORD' ) [ RunTime:0.000236s ]
+SQL: UPDATE `onethink_config` SET `value`='' WHERE ( `name` = 'WEB_SITE_ICP' ) [ RunTime:0.000231s ]
+SQL: UPDATE `onethink_config` SET `value`='default_color' WHERE ( `name` = 'COLOR_STYLE' ) [ RunTime:0.000174s ]
+
+[ 2017-03-13T13:22:45+08:00 ] 127.0.0.1 /index.php?s=/Admin/article/autoSave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000459s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000914s ]
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.007064s ]
+SQL: SELECT * FROM `onethink_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000499s ]
+SQL: SELECT `id` FROM `onethink_menu` WHERE ( url like '%Article/autosave%' ) LIMIT 1   [ RunTime:0.000357s ]
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.004527s ]
+SQL: SELECT `id`,`pid`,`title` FROM `onethink_menu` WHERE ( id=8 ) LIMIT 1   [ RunTime:0.000326s ]
+SQL: SELECT `id`,`pid`,`title` FROM `onethink_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000300s ]
+SQL: SELECT `id`,`pid`,`title` FROM `onethink_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000295s ]
+SQL: SELECT DISTINCT  `group` FROM `onethink_menu` WHERE ( pid = 2 )  [ RunTime:0.000529s ]
+SQL: SELECT `id`,`url` FROM `onethink_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000332s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `onethink_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000389s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `onethink_menu` WHERE ( `group` = '物业文章管理' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000398s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `onethink_menu` WHERE ( `group` = '管理中心' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000425s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.004596s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\phpStudy\WWW\2017-03-12-wuye\wwwroot\Application\Admin\Model\DocumentModel.class.php 第 324 行.
+SQL: INSERT INTO `onethink_document` (`title`,`name`,`description`,`type`,`display`,`level`,`cover_id`,`view`,`comment`,`create_time`,`link_id`,`id`,`pid`,`model_id`,`category_id`,`uid`,`root`,`attach`,`extend`,`update_time`,`status`,`position`) VALUES ('2017-03-13日','','',2,1,0,0,0,0,1489382565,0,0,0,2,40,1,0,0,0,1489382565,3,0) [ RunTime:0.000472s ]
+SQL: SHOW COLUMNS FROM `onethink_document_article` [ RunTime:0.004416s ]
+SQL: INSERT INTO `onethink_document_article` (`content`,`parse`,`bookmark`,`template`,`id`) VALUES ('',0,0,'',2) [ RunTime:0.000382s ]
+
+[ 2017-03-13T13:22:56+08:00 ] 127.0.0.1 /index.php?s=/Admin/Article/update.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000268s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000530s ]
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.005952s ]
+SQL: SELECT * FROM `onethink_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000413s ]
+SQL: SELECT `id` FROM `onethink_menu` WHERE ( url like '%Article/update%' ) LIMIT 1   [ RunTime:0.000240s ]
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.003971s ]
+SQL: SELECT `id`,`pid`,`title` FROM `onethink_menu` WHERE ( id=7 ) LIMIT 1   [ RunTime:0.000323s ]
+SQL: SELECT `id`,`pid`,`title` FROM `onethink_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000213s ]
+SQL: SELECT `id`,`pid`,`title` FROM `onethink_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000211s ]
+SQL: SELECT DISTINCT  `group` FROM `onethink_menu` WHERE ( pid = 2 )  [ RunTime:0.000749s ]
+SQL: SELECT `id`,`url` FROM `onethink_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000427s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `onethink_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000288s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `onethink_menu` WHERE ( `group` = '物业文章管理' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000369s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `onethink_menu` WHERE ( `group` = '管理中心' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000267s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.003359s ]
+SQL: SELECT `status` FROM `onethink_document` WHERE ( `id` = 2 ) LIMIT 1   [ RunTime:0.000226s ]
+SQL: UPDATE `onethink_document` SET `title`='2017-03-13日',`name`='',`description`='',`type`=2,`display`=1,`level`=0,`cover_id`=0,`view`=0,`comment`=0,`create_time`=1489382576,`link_id`=0,`pid`=0,`model_id`=2,`category_id`=40,`root`=0,`update_time`=1489382576,`status`=1,`position`=0 WHERE ( `id` = 2 ) [ RunTime:0.000288s ]
+SQL: SHOW COLUMNS FROM `onethink_document_article` [ RunTime:0.003430s ]
+NOTIC: [8] Undefined variable: id D:\phpStudy\WWW\2017-03-12-wuye\wwwroot\Application\Admin\Model\DocumentModel.class.php 第 178 行.
+SQL: UPDATE `onethink_document_article` SET `content`='今日20：20停水，请大家及时做好准备',`parse`=0,`bookmark`=0,`template`='' WHERE ( `id` = 2 ) [ RunTime:0.000643s ]
+INFO: [ documentSaveComplete ] --START--
+INFO: Run Attachment [ RunTime:0.001179s ]
+INFO: [ documentSaveComplete ] --END-- [ RunTime:0.001215s ]
+NOTIC: [8] Undefined variable: id D:\phpStudy\WWW\2017-03-12-wuye\wwwroot\Application\Admin\Model\DocumentModel.class.php 第 189 行.
+
+[ 2017-03-13T14:04:49+08:00 ] 127.0.0.1 /index.php?s=/Admin/Article/setStatus/status/1.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000742s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001309s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpStudy\WWW\2017-03-12-wuye\wwwroot\ThinkPHP\Common\functions.php 第 1092 行.
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.006407s ]
+SQL: SELECT * FROM `onethink_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000531s ]
+SQL: SELECT `id` FROM `onethink_menu` WHERE ( url like '%Article/setstatus%' ) LIMIT 1   [ RunTime:0.000257s ]
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.003031s ]
+SQL: SELECT `id`,`pid`,`title` FROM `onethink_menu` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.000292s ]
+SQL: SELECT `id`,`pid`,`title` FROM `onethink_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000265s ]
+SQL: SELECT `id`,`pid`,`title` FROM `onethink_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000261s ]
+SQL: SELECT DISTINCT  `group` FROM `onethink_menu` WHERE ( pid = 2 )  [ RunTime:0.000387s ]
+SQL: SELECT `id`,`url` FROM `onethink_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000292s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `onethink_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000323s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `onethink_menu` WHERE ( `group` = '物业文章管理' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000326s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `onethink_menu` WHERE ( `group` = '管理中心' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000325s ]
+NOTIC: [2] Cannot modify header information - headers already sent D:\phpStudy\WWW\2017-03-12-wuye\wwwroot\ThinkPHP\Library\Think\Controller.class.php 第 214 行.
+
+[ 2017-03-13T14:04:52+08:00 ] 127.0.0.1 /index.php?s=/Admin/Article/setStatus/status/0.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000258s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000470s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpStudy\WWW\2017-03-12-wuye\wwwroot\ThinkPHP\Common\functions.php 第 1092 行.
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.005872s ]
+SQL: SELECT * FROM `onethink_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000358s ]
+SQL: SELECT `id` FROM `onethink_menu` WHERE ( url like '%Article/setstatus%' ) LIMIT 1   [ RunTime:0.000205s ]
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.003046s ]
+SQL: SELECT `id`,`pid`,`title` FROM `onethink_menu` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.000230s ]
+SQL: SELECT `id`,`pid`,`title` FROM `onethink_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000200s ]
+SQL: SELECT `id`,`pid`,`title` FROM `onethink_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000194s ]
+SQL: SELECT DISTINCT  `group` FROM `onethink_menu` WHERE ( pid = 2 )  [ RunTime:0.000354s ]
+SQL: SELECT `id`,`url` FROM `onethink_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000220s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `onethink_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000252s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `onethink_menu` WHERE ( `group` = '物业文章管理' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000333s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `onethink_menu` WHERE ( `group` = '管理中心' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000336s ]
+NOTIC: [2] Cannot modify header information - headers already sent D:\phpStudy\WWW\2017-03-12-wuye\wwwroot\ThinkPHP\Library\Think\Controller.class.php 第 214 行.
+
+[ 2017-03-13T14:04:59+08:00 ] 127.0.0.1 /index.php?s=/Admin/Article/setStatus/status/1.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000269s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000487s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpStudy\WWW\2017-03-12-wuye\wwwroot\ThinkPHP\Common\functions.php 第 1092 行.
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.005544s ]
+SQL: SELECT * FROM `onethink_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000348s ]
+SQL: SELECT `id` FROM `onethink_menu` WHERE ( url like '%Article/setstatus%' ) LIMIT 1   [ RunTime:0.000148s ]
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.002617s ]
+SQL: SELECT `id`,`pid`,`title` FROM `onethink_menu` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.000145s ]
+SQL: SELECT `id`,`pid`,`title` FROM `onethink_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000107s ]
+SQL: SELECT `id`,`pid`,`title` FROM `onethink_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000101s ]
+SQL: SELECT DISTINCT  `group` FROM `onethink_menu` WHERE ( pid = 2 )  [ RunTime:0.000211s ]
+SQL: SELECT `id`,`url` FROM `onethink_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000135s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `onethink_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000161s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `onethink_menu` WHERE ( `group` = '物业文章管理' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000156s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `onethink_menu` WHERE ( `group` = '管理中心' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000203s ]
+NOTIC: [2] Cannot modify header information - headers already sent D:\phpStudy\WWW\2017-03-12-wuye\wwwroot\ThinkPHP\Library\Think\Controller.class.php 第 214 行.
+
+[ 2017-03-13T14:05:07+08:00 ] 127.0.0.1 /index.php?s=/Admin/Article/setStatus/status/1.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000271s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000505s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpStudy\WWW\2017-03-12-wuye\wwwroot\ThinkPHP\Common\functions.php 第 1092 行.
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.005546s ]
+SQL: SELECT * FROM `onethink_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000310s ]
+SQL: SELECT `id` FROM `onethink_menu` WHERE ( url like '%Article/setstatus%' ) LIMIT 1   [ RunTime:0.000240s ]
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.003147s ]
+SQL: SELECT `id`,`pid`,`title` FROM `onethink_menu` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.000252s ]
+SQL: SELECT `id`,`pid`,`title` FROM `onethink_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000187s ]
+SQL: SELECT `id`,`pid`,`title` FROM `onethink_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000157s ]
+SQL: SELECT DISTINCT  `group` FROM `onethink_menu` WHERE ( pid = 2 )  [ RunTime:0.000281s ]
+SQL: SELECT `id`,`url` FROM `onethink_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000186s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `onethink_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000210s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `onethink_menu` WHERE ( `group` = '物业文章管理' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000211s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `onethink_menu` WHERE ( `group` = '管理中心' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000241s ]
+NOTIC: [2] Cannot modify header information - headers already sent D:\phpStudy\WWW\2017-03-12-wuye\wwwroot\ThinkPHP\Library\Think\Controller.class.php 第 214 行.
+
+[ 2017-03-13T14:06:25+08:00 ] 127.0.0.1 /index.php?s=/Admin/article/autoSave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001739s ]
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.006238s ]
+SQL: SELECT * FROM `onethink_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000458s ]
+SQL: SELECT `id` FROM `onethink_menu` WHERE ( url like '%Article/autosave%' ) LIMIT 1   [ RunTime:0.000284s ]
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.003715s ]
+SQL: SELECT `id`,`pid`,`title` FROM `onethink_menu` WHERE ( id=8 ) LIMIT 1   [ RunTime:0.000263s ]
+SQL: SELECT `id`,`pid`,`title` FROM `onethink_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000235s ]
+SQL: SELECT `id`,`pid`,`title` FROM `onethink_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000225s ]
+SQL: SELECT DISTINCT  `group` FROM `onethink_menu` WHERE ( pid = 2 )  [ RunTime:0.000419s ]
+SQL: SELECT `id`,`url` FROM `onethink_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000270s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `onethink_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000278s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `onethink_menu` WHERE ( `group` = '物业文章管理' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000303s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `onethink_menu` WHERE ( `group` = '管理中心' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000328s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.004090s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\phpStudy\WWW\2017-03-12-wuye\wwwroot\Application\Admin\Model\DocumentModel.class.php 第 324 行.
+SQL: INSERT INTO `onethink_document` (`title`,`name`,`description`,`type`,`display`,`level`,`cover_id`,`view`,`comment`,`create_time`,`link_id`,`id`,`pid`,`model_id`,`category_id`,`uid`,`root`,`attach`,`extend`,`update_time`,`status`,`position`) VALUES ('注意高空投物','','',2,1,0,0,0,0,1489385185,0,0,0,2,40,1,0,0,0,1489385185,3,0) [ RunTime:0.000472s ]
+SQL: SHOW COLUMNS FROM `onethink_document_article` [ RunTime:0.002875s ]
+SQL: INSERT INTO `onethink_document_article` (`content`,`parse`,`bookmark`,`template`,`id`) VALUES ('',0,0,'',3) [ RunTime:0.000256s ]
+
+[ 2017-03-13T14:06:46+08:00 ] 127.0.0.1 /index.php?s=/Admin/Article/update.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000349s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000634s ]
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.005966s ]
+SQL: SELECT * FROM `onethink_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000409s ]
+SQL: SELECT `id` FROM `onethink_menu` WHERE ( url like '%Article/update%' ) LIMIT 1   [ RunTime:0.000248s ]
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.003339s ]
+SQL: SELECT `id`,`pid`,`title` FROM `onethink_menu` WHERE ( id=7 ) LIMIT 1   [ RunTime:0.000243s ]
+SQL: SELECT `id`,`pid`,`title` FROM `onethink_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000265s ]
+SQL: SELECT `id`,`pid`,`title` FROM `onethink_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000236s ]
+SQL: SELECT DISTINCT  `group` FROM `onethink_menu` WHERE ( pid = 2 )  [ RunTime:0.000392s ]
+SQL: SELECT `id`,`url` FROM `onethink_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000271s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `onethink_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000311s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `onethink_menu` WHERE ( `group` = '物业文章管理' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000317s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `onethink_menu` WHERE ( `group` = '管理中心' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000319s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.003403s ]
+SQL: SELECT `status` FROM `onethink_document` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000284s ]
+SQL: UPDATE `onethink_document` SET `title`='注意高空投物',`name`='',`description`='',`type`=2,`display`=1,`level`=0,`cover_id`=0,`view`=0,`comment`=0,`create_time`=1489385206,`link_id`=0,`pid`=0,`model_id`=2,`category_id`=40,`root`=0,`update_time`=1489385206,`status`=1,`position`=0 WHERE ( `id` = 3 ) [ RunTime:0.000299s ]
+SQL: SHOW COLUMNS FROM `onethink_document_article` [ RunTime:0.003259s ]
+NOTIC: [8] Undefined variable: id D:\phpStudy\WWW\2017-03-12-wuye\wwwroot\Application\Admin\Model\DocumentModel.class.php 第 178 行.
+SQL: UPDATE `onethink_document_article` SET `content`='为了大家的安全，请不要进行高空投物',`parse`=0,`bookmark`=0,`template`='' WHERE ( `id` = 3 ) [ RunTime:0.000338s ]
+INFO: [ documentSaveComplete ] --START--
+INFO: Run Attachment [ RunTime:0.001174s ]
+INFO: [ documentSaveComplete ] --END-- [ RunTime:0.001214s ]
+NOTIC: [8] Undefined variable: id D:\phpStudy\WWW\2017-03-12-wuye\wwwroot\Application\Admin\Model\DocumentModel.class.php 第 189 行.
+
+[ 2017-03-13T14:10:40+08:00 ] 127.0.0.1 /index.php?s=/Admin/Config/save.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000347s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000628s ]
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.006316s ]
+SQL: SELECT * FROM `onethink_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000401s ]
+SQL: SELECT `id` FROM `onethink_menu` WHERE ( url like '%Config/save%' ) LIMIT 1   [ RunTime:0.000301s ]
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.003250s ]
+SQL: SELECT `id`,`pid`,`title` FROM `onethink_menu` WHERE ( id=74 ) LIMIT 1   [ RunTime:0.000277s ]
+SQL: SELECT `id`,`pid`,`title` FROM `onethink_menu` WHERE ( id=70 ) LIMIT 1   [ RunTime:0.000251s ]
+SQL: SELECT `id`,`pid`,`title` FROM `onethink_menu` WHERE ( id=68 ) LIMIT 1   [ RunTime:0.000243s ]
+SQL: SELECT DISTINCT  `group` FROM `onethink_menu` WHERE ( pid = 68 )  [ RunTime:0.000375s ]
+SQL: SELECT `id`,`url` FROM `onethink_menu` WHERE ( `pid` = 68 ) AND ( `hide` = 0 )  [ RunTime:0.000343s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `onethink_menu` WHERE ( `group` = '系统设置' ) AND ( `pid` = 68 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000343s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `onethink_menu` WHERE ( `group` = '' ) AND ( `pid` = 68 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000344s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `onethink_menu` WHERE ( `group` = '数据备份' ) AND ( `pid` = 68 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000325s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.003152s ]
+SQL: UPDATE `onethink_config` SET `value`='Wechat 物业管理系统' WHERE ( `name` = 'WEB_SITE_TITLE' ) [ RunTime:0.000271s ]
+SQL: UPDATE `onethink_config` SET `value`='OneThink内容管理框架' WHERE ( `name` = 'WEB_SITE_DESCRIPTION' ) [ RunTime:0.000234s ]
+SQL: UPDATE `onethink_config` SET `value`='1' WHERE ( `name` = 'WEB_SITE_CLOSE' ) [ RunTime:0.000228s ]
+SQL: UPDATE `onethink_config` SET `value`='ThinkPHP,OneThink' WHERE ( `name` = 'WEB_SITE_KEYWORD' ) [ RunTime:0.000234s ]
+SQL: UPDATE `onethink_config` SET `value`='' WHERE ( `name` = 'WEB_SITE_ICP' ) [ RunTime:0.000232s ]
+SQL: UPDATE `onethink_config` SET `value`='blue_color' WHERE ( `name` = 'COLOR_STYLE' ) [ RunTime:0.000269s ]
+
+[ 2017-03-13T14:43:30+08:00 ] 127.0.0.1 /index.php?s=/Admin/Menu/del/id/123.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000617s ]
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.005812s ]
+SQL: SELECT * FROM `onethink_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000447s ]
+SQL: SELECT `id` FROM `onethink_menu` WHERE ( url like '%Menu/del%' ) LIMIT 1   [ RunTime:0.000411s ]
+SQL: DELETE FROM `onethink_menu` WHERE ( `id` IN ('123') ) [ RunTime:0.001049s ]
+SQL: SHOW COLUMNS FROM `onethink_action` [ RunTime:0.005772s ]
+SQL: SELECT * FROM `onethink_action` WHERE ( `name` = 'update_menu' ) LIMIT 1   [ RunTime:0.000334s ]
+SQL: SHOW COLUMNS FROM `onethink_action_log` [ RunTime:0.003321s ]
+SQL: INSERT INTO `onethink_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`create_time`,`remark`) VALUES (10,1,2130706433,'Menu',1489387410,'操作url：/index.php?s=/Admin/Menu/del/id/123.html') [ RunTime:0.000446s ]
+
+[ 2017-03-13T14:44:10+08:00 ] 127.0.0.1 /index.php?s=/Admin/Menu/del/id/126.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000407s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000841s ]
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.006916s ]
+SQL: SELECT * FROM `onethink_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000361s ]
+SQL: SELECT `id` FROM `onethink_menu` WHERE ( url like '%Menu/del%' ) LIMIT 1   [ RunTime:0.000257s ]
+SQL: DELETE FROM `onethink_menu` WHERE ( `id` IN ('126') ) [ RunTime:0.000232s ]
+SQL: SHOW COLUMNS FROM `onethink_action` [ RunTime:0.003398s ]
+SQL: SELECT * FROM `onethink_action` WHERE ( `name` = 'update_menu' ) LIMIT 1   [ RunTime:0.000346s ]
+SQL: SHOW COLUMNS FROM `onethink_action_log` [ RunTime:0.003783s ]
+SQL: INSERT INTO `onethink_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`create_time`,`remark`) VALUES (10,1,2130706433,'Menu',1489387450,'操作url：/index.php?s=/Admin/Menu/del/id/126.html') [ RunTime:0.000298s ]
+
+[ 2017-03-13T15:19:17+08:00 ] 127.0.0.1 /index.php?s=/Admin/Article/setStatus/ids/1/status/0.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000278s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000521s ]
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.006460s ]
+SQL: SELECT * FROM `onethink_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000346s ]
+SQL: SELECT `id` FROM `onethink_menu` WHERE ( url like '%Article/setstatus%' ) LIMIT 1   [ RunTime:0.000208s ]
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.003153s ]
+SQL: SELECT `id`,`pid`,`title` FROM `onethink_menu` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.000249s ]
+SQL: SELECT `id`,`pid`,`title` FROM `onethink_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000234s ]
+SQL: SELECT `id`,`pid`,`title` FROM `onethink_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000180s ]
+SQL: SELECT DISTINCT  `group` FROM `onethink_menu` WHERE ( pid = 2 )  [ RunTime:0.000335s ]
+SQL: SELECT `id`,`url` FROM `onethink_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000225s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `onethink_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000259s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.003134s ]
+SQL: UPDATE `onethink_document` SET `status`=0 WHERE ( `id` IN ('1') ) [ RunTime:0.000534s ]
+
+[ 2017-03-13T15:20:58+08:00 ] 127.0.0.1 /index.php?s=/Admin/Article/setStatus/ids/1/status/1.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000318s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000616s ]
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.005777s ]
+SQL: SELECT * FROM `onethink_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000401s ]
+SQL: SELECT `id` FROM `onethink_menu` WHERE ( url like '%Article/setstatus%' ) LIMIT 1   [ RunTime:0.000242s ]
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.003243s ]
+SQL: SELECT `id`,`pid`,`title` FROM `onethink_menu` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.000271s ]
+SQL: SELECT `id`,`pid`,`title` FROM `onethink_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000143s ]
+SQL: SELECT `id`,`pid`,`title` FROM `onethink_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000195s ]
+SQL: SELECT DISTINCT  `group` FROM `onethink_menu` WHERE ( pid = 2 )  [ RunTime:0.000484s ]
+SQL: SELECT `id`,`url` FROM `onethink_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000245s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `onethink_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000309s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.003084s ]
+SQL: UPDATE `onethink_document` SET `status`=1 WHERE ( `id` IN ('1') ) [ RunTime:0.000245s ]
+
+[ 2017-03-13T15:22:54+08:00 ] 127.0.0.1 /index.php?s=/Admin/Article/setStatus/ids/1/status/0.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000538s ]
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.005877s ]
+SQL: SELECT * FROM `onethink_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000419s ]
+SQL: SELECT `id` FROM `onethink_menu` WHERE ( url like '%Article/setstatus%' ) LIMIT 1   [ RunTime:0.000177s ]
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.003193s ]
+SQL: SELECT `id`,`pid`,`title` FROM `onethink_menu` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.000185s ]
+SQL: SELECT `id`,`pid`,`title` FROM `onethink_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000293s ]
+SQL: SELECT `id`,`pid`,`title` FROM `onethink_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000307s ]
+SQL: SELECT DISTINCT  `group` FROM `onethink_menu` WHERE ( pid = 2 )  [ RunTime:0.000395s ]
+SQL: SELECT `id`,`url` FROM `onethink_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000248s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `onethink_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000308s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.003232s ]
+SQL: UPDATE `onethink_document` SET `status`=0 WHERE ( `id` IN ('1') ) [ RunTime:0.000308s ]
+
+[ 2017-03-13T15:31:27+08:00 ] 127.0.0.1 /index.php?s=/Admin/Article/update.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000379s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000706s ]
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.006183s ]
+SQL: SELECT * FROM `onethink_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000446s ]
+SQL: SELECT `id` FROM `onethink_menu` WHERE ( url like '%Article/update%' ) LIMIT 1   [ RunTime:0.000299s ]
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.003679s ]
+SQL: SELECT `id`,`pid`,`title` FROM `onethink_menu` WHERE ( id=7 ) LIMIT 1   [ RunTime:0.000294s ]
+SQL: SELECT `id`,`pid`,`title` FROM `onethink_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000259s ]
+SQL: SELECT `id`,`pid`,`title` FROM `onethink_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000257s ]
+SQL: SELECT DISTINCT  `group` FROM `onethink_menu` WHERE ( pid = 2 )  [ RunTime:0.000373s ]
+SQL: SELECT `id`,`url` FROM `onethink_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000321s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `onethink_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000351s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.003487s ]
+
+[ 2017-03-13T15:31:34+08:00 ] 127.0.0.1 /index.php?s=/Admin/Article/update.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000638s ]
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.006099s ]
+SQL: SELECT * FROM `onethink_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000415s ]
+SQL: SELECT `id` FROM `onethink_menu` WHERE ( url like '%Article/update%' ) LIMIT 1   [ RunTime:0.000247s ]
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.003488s ]
+SQL: SELECT `id`,`pid`,`title` FROM `onethink_menu` WHERE ( id=7 ) LIMIT 1   [ RunTime:0.000249s ]
+SQL: SELECT `id`,`pid`,`title` FROM `onethink_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000296s ]
+SQL: SELECT `id`,`pid`,`title` FROM `onethink_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000262s ]
+SQL: SELECT DISTINCT  `group` FROM `onethink_menu` WHERE ( pid = 2 )  [ RunTime:0.000372s ]
+SQL: SELECT `id`,`url` FROM `onethink_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000205s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `onethink_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000288s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.003518s ]
+
+[ 2017-03-13T15:46:57+08:00 ] 127.0.0.1 /index.php?s=/Admin/Article/update.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000347s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000630s ]
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.007165s ]
+SQL: SELECT * FROM `onethink_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000389s ]
+SQL: SELECT `id` FROM `onethink_menu` WHERE ( url like '%Article/update%' ) LIMIT 1   [ RunTime:0.000241s ]
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.003518s ]
+SQL: SELECT `id`,`pid`,`title` FROM `onethink_menu` WHERE ( id=7 ) LIMIT 1   [ RunTime:0.000260s ]
+SQL: SELECT `id`,`pid`,`title` FROM `onethink_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000197s ]
+SQL: SELECT `id`,`pid`,`title` FROM `onethink_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000191s ]
+SQL: SELECT DISTINCT  `group` FROM `onethink_menu` WHERE ( pid = 2 )  [ RunTime:0.000504s ]
+SQL: SELECT `id`,`url` FROM `onethink_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000180s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `onethink_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000220s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.004318s ]
+SQL: SELECT `status` FROM `onethink_document` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000331s ]
+SQL: UPDATE `onethink_document` SET `title`='注意高空投物',`name`='',`description`='高空投物',`type`=2,`display`=1,`level`=0,`cover_id`=0,`view`=0,`comment`=0,`create_time`=1489385160,`deadline`=0,`link_id`=0,`pid`=0,`model_id`=2,`category_id`=40,`root`=0,`update_time`=1489391217,`status`=1,`position`=0 WHERE ( `id` = 3 ) [ RunTime:0.000289s ]
+SQL: SHOW COLUMNS FROM `onethink_document_article` [ RunTime:0.003519s ]
+NOTIC: [8] Undefined variable: id D:\phpStudy\WWW\2017-03-12-wuye\wwwroot\Application\Admin\Model\DocumentModel.class.php 第 178 行.
+SQL: UPDATE `onethink_document_article` SET `content`='为了大家的安全，请不要进行高空投物',`parse`=0,`bookmark`=0,`template`='' WHERE ( `id` = 3 ) [ RunTime:0.000259s ]
+INFO: [ documentSaveComplete ] --START--
+INFO: Run Attachment [ RunTime:0.001205s ]
+INFO: [ documentSaveComplete ] --END-- [ RunTime:0.001242s ]
+NOTIC: [8] Undefined variable: id D:\phpStudy\WWW\2017-03-12-wuye\wwwroot\Application\Admin\Model\DocumentModel.class.php 第 189 行.
+
+[ 2017-03-13T15:47:14+08:00 ] 127.0.0.1 /index.php?s=/Admin/Article/update.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000661s ]
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.005857s ]
+SQL: SELECT * FROM `onethink_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000548s ]
+SQL: SELECT `id` FROM `onethink_menu` WHERE ( url like '%Article/update%' ) LIMIT 1   [ RunTime:0.000293s ]
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.003904s ]
+SQL: SELECT `id`,`pid`,`title` FROM `onethink_menu` WHERE ( id=7 ) LIMIT 1   [ RunTime:0.000316s ]
+SQL: SELECT `id`,`pid`,`title` FROM `onethink_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000273s ]
+SQL: SELECT `id`,`pid`,`title` FROM `onethink_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000272s ]
+SQL: SELECT DISTINCT  `group` FROM `onethink_menu` WHERE ( pid = 2 )  [ RunTime:0.000420s ]
+SQL: SELECT `id`,`url` FROM `onethink_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000295s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `onethink_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000268s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.003602s ]
+SQL: SELECT `status` FROM `onethink_document` WHERE ( `id` = 2 ) LIMIT 1   [ RunTime:0.000330s ]
+SQL: UPDATE `onethink_document` SET `title`='2017-03-13日停水通知',`name`='',`description`='停水',`type`=2,`display`=1,`level`=0,`cover_id`=0,`view`=0,`comment`=0,`create_time`=1489382520,`deadline`=0,`link_id`=0,`pid`=0,`model_id`=2,`category_id`=40,`root`=0,`update_time`=1489391234,`status`=1,`position`=0 WHERE ( `id` = 2 ) [ RunTime:0.000284s ]
+SQL: SHOW COLUMNS FROM `onethink_document_article` [ RunTime:0.004143s ]
+NOTIC: [8] Undefined variable: id D:\phpStudy\WWW\2017-03-12-wuye\wwwroot\Application\Admin\Model\DocumentModel.class.php 第 178 行.
+SQL: UPDATE `onethink_document_article` SET `content`='今日20：20停水，请大家及时做好准备',`parse`=0,`bookmark`=0,`template`='' WHERE ( `id` = 2 ) [ RunTime:0.000334s ]
+INFO: [ documentSaveComplete ] --START--
+INFO: Run Attachment [ RunTime:0.001469s ]
+INFO: [ documentSaveComplete ] --END-- [ RunTime:0.001521s ]
+NOTIC: [8] Undefined variable: id D:\phpStudy\WWW\2017-03-12-wuye\wwwroot\Application\Admin\Model\DocumentModel.class.php 第 189 行.
+
+[ 2017-03-13T15:53:46+08:00 ] 127.0.0.1 /index.php?s=/Home/notice/noticeDetail/1.html
+ERR: 参数错误或者未定义:id
+
+[ 2017-03-13T15:53:51+08:00 ] 127.0.0.1 /index.php?s=/Home/notice/noticeDetail/1.html
+ERR: 参数错误或者未定义:id
+
+[ 2017-03-13T15:54:31+08:00 ] 127.0.0.1 /index.php?s=/Home/notice/noticeDetail/1.html
+ERR: 参数错误或者未定义:detail_id
+
+[ 2017-03-13T15:55:13+08:00 ] 127.0.0.1 /index.php?s=/Home/notice/noticeDetail/1.html
+ERR: 参数错误或者未定义:detail_id
+
+[ 2017-03-13T15:55:15+08:00 ] 127.0.0.1 /index.php?s=/Home/notice/noticeDetail&1.html
+ERR: 参数错误或者未定义:detail_id
+
+[ 2017-03-13T15:58:07+08:00 ] 127.0.0.1 /index.php?s=/Home/notice/noticeDetail/1.html
+ERR: 参数错误或者未定义:detail_id
+
+[ 2017-03-13T15:58:46+08:00 ] 127.0.0.1 /index.php?s=/Home/notice/noticeDetail/1.html
+ERR: 参数错误或者未定义:detail_id
+

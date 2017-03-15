@@ -146,15 +146,34 @@
 	<!-- 标题 -->
 	<div class="main-title">
 		<h2>
-		我的文档(<?php echo ($_total); ?>)
+		子文档列表(<?php echo ($_total); ?>) [
+		<?php if(is_array($rightNav)): $i = 0; $__LIST__ = $rightNav;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$nav): $mod = ($i % 2 );++$i;?><a href="<?php echo U('article/index','cate_id='.$nav['id']);?>"><?php echo ($nav["title"]); ?></a>
+			<?php if(count($rightNav) > $i): ?><i class="ca"></i><?php endif; endforeach; endif; else: echo "" ;endif; ?>
+		<?php if(isset($article)): ?>：<a href="<?php echo U('article/index','cate_id='.$cate_id.'&pid='.$article['id']);?>"><?php echo ($article["title"]); ?></a><?php endif; ?>
+		]
+		<?php if(($allow) == "0"): ?>（该分类不允许发布内容）<?php endif; ?>
 		</h2>
 	</div>
 
 	<!-- 按钮工具栏 -->
 	<div class="cf">
 		<div class="fl">
+			<div class="btn-group">
+				<?php if(($allow) == "1"): ?><button class="btn" id="document_add" <?php if(count($model) == 1): ?>url="<?php echo U('article/add',array('cate_id'=>$cate_id,'pid'=>I('pid',0),'model_id'=>$model[0]));?>"<?php endif; ?>>新 增
+						<?php if(count($model) > 1): ?><i class="btn-arrowdown"></i><?php endif; ?>
+					</button>
+					<?php if(count($model) > 1): ?><ul class="dropdown nav-list">
+						<?php if(is_array($model)): $i = 0; $__LIST__ = $model;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li><a href="<?php echo U('article/add',array('cate_id'=>$cate_id,'model_id'=>$vo,'pid'=>I('pid',0)));?>"><?php echo (get_document_model($vo,'title')); ?></a></li><?php endforeach; endif; else: echo "" ;endif; ?>
+					</ul><?php endif; ?>
+				<?php else: ?>
+					<button class="btn disabled" >新 增
+						<?php if(count($model) > 1): ?><i class="btn-arrowdown"></i><?php endif; ?>
+					</button><?php endif; ?>
+			</div>
             <button class="btn ajax-post" target-form="ids" url="<?php echo U("Article/setStatus",array("status"=>1));?>">启 用</button>
 			<button class="btn ajax-post" target-form="ids" url="<?php echo U("Article/setStatus",array("status"=>0));?>">禁 用</button>
+			<input type="hidden" class="hide-data" name="cate_id" value="<?php echo ($cate_id); ?>"/>
+			<input type="hidden" class="hide-data" name="pid" value="<?php echo ($pid); ?>"/>
 			<button class="btn ajax-post confirm" target-form="ids" url="<?php echo U("Article/setStatus",array("status"=>-1));?>">删 除</button>
 		</div>
 
@@ -171,72 +190,63 @@
 						<li><a href="javascript:;" value="2">待审核</a></li>
 					</ul>
 				</div>
-				<input type="text" name="title" class="search-input" value="<?php echo I('title');?>" placeholder="请输入标题文档">
-				<a class="sch-btn" href="javascript:;" id="search" url="<?php echo U('article/mydocument','pid='.I('pid',0).'&cate_id='.$cate_id,false);?>"><i class="btn-search"></i></a>
+				<input type="text" name="content" class="search-input" value="<?php echo I('content');?>" placeholder="请输入内容关键字">
+				<a class="sch-btn" href="javascript:;" id="search" url="<?php echo U('article/index','pid='.I('pid',0).'&cate_id='.$cate_id,false);?>"><i class="btn-search"></i></a>
 			</div>
             <div class="btn-group-click adv-sch-pannel fl">
                 <button class="btn">高 级<i class="btn-arrowdown"></i></button>
                 <div class="dropdown cf">
                 	<div class="row">
-                		<label>创建时间：</label>
-                		<input type="text" id="time-start" name="time-start" class="text input-2x" value="" placeholder="起始时间" /> -                		
-                        <div class="input-append date" id="datetimepicker"  style="display:inline-block">
-                            <input type="text" id="time-end" name="time-end" class="text input-2x" value="" placeholder="结束时间" />
+                		<label>更新时间：</label>
+                		<input type="text" id="time-start" name="time-start" class="text input-2x" value="" placeholder="起始时间" /> -
+                        <div class="input-append date" id="datetimepicker" style="display:inline-block">
+                            <input type="text" id="time-end" name="time-end" class="text input-2x" value="" placeholder="结束时间"/>
                             <span class="add-on"><i class="icon-th"></i></span>
                         </div>
                 	</div>
+                    <!-- <div class="row"> -->
+                        <!-- <label>创建者：</label> -->
+                        <!-- <input type="text" name="username" class="text input-2x" value="" placeholder="请输入用户名"> -->
+                    <!-- </div> -->
                 </div>
             </div>
 		</div>
 	</div>
 
-
 	<!-- 数据表格 -->
     <div class="data-table">
 		<table class="">
-    <thead>
-        <tr>
-		<th class="row-selected row-selected"><input class="check-all" type="checkbox"/></th>
-		<th class="">编号</th>
-		<th class="">标题</th>
-		<th class="">子文档</th>
-		<th class="">类型</th>
-		<th class="">分类</th>
-		<th class="">优先级</th>
-		<th class="">最后更新</th>
-		<th class="">浏览</th>
-		<th class="">状态</th>
-		<th class="">操作</th>
-		</tr>
-    </thead>
-    <tbody>
-		<?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
-            <td><input class="ids" type="checkbox" name="ids[]" value="<?php echo ($vo["id"]); ?>" /></td>
-			<td><?php echo ($vo["id"]); ?> </td>
-			<td><a href="<?php echo U('Article/index?cate_id='.$vo['category_id'].'&pid='.$vo['id']);?>"><?php echo ($vo["title"]); ?></a></td>
-			<td><span><?php echo get_subdocument_count($vo['id']);?></span></td>
-			<td><span><?php echo get_document_type($vo['type']);?></span></td>
-			<td><span><?php echo get_cate($vo['category_id']);?></span></td>
-			<td><?php echo ($vo["level"]); ?></td>
-			<td><span><?php echo (time_format($vo["update_time"])); ?></span></td>
-			<td><?php echo ($vo["view"]); ?></td>
-			<td><?php echo ($vo["status_text"]); ?></td>
-			<td><a href="<?php echo U('Article/edit?cate_id='.$vo['category_id'].'&id='.$vo['id']);?>">编辑</a>
-				<a href="<?php echo U('Article/setStatus?ids='.$vo['id'].'&status='.abs(1-$vo['status']));?>" class="ajax-get"><?php echo (show_status_op($vo["status"])); ?></a>
-				<a href="<?php echo U('Article/setStatus?status=-1&ids='.$vo['id']);?>" class="confirm ajax-get">删除</a>
-                </td>
-		</tr><?php endforeach; endif; else: echo "" ;endif; ?>
-	</tbody>
-    </table> 
-
-        
+			<thead>
+				<tr>
+				<th class="row-selected row-selected"><input class="check-all" type="checkbox"/></th>
+				<th class="">编号</th>
+				<th class="">内容</th>
+				<th class="">创建者</th>
+				<th class="">最后更新</th>
+				<th class="">状态</th>
+				<th class="">操作</th>
+				</tr>
+			</thead>
+			<tbody>
+				<?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
+					<td><input class="ids" type="checkbox" name="ids[]" value="<?php echo ($vo["id"]); ?>" /></td>
+					<td><?php echo ($vo["id"]); ?> </td>
+					<td><a href="<?php echo U('Article/index?cate_id='.$vo['category_id'].'&pid='.$vo['id']);?>"><?php echo mb_strimwidth($vo['content'],0,50,"...","utf-8");?></a></td>
+					<td><span><?php echo get_username($vo['uid']);?></span></td>
+					<td><span><?php echo (time_format($vo["update_time"])); ?></span></td>
+					<td><?php echo ($vo["status_text"]); ?></td>
+					<td><a href="<?php echo U('Article/edit?cate_id='.$vo['category_id'].'&id='.$vo['id']);?>">编辑</a>
+						<a href="<?php echo U('Article/setStatus?ids='.$vo['id'].'&status='.abs(1-$vo['status']));?>" class="ajax-get"><?php echo (show_status_op($vo["status"])); ?></a>
+						<a href="<?php echo U('Article/setStatus?status=-1&ids='.$vo['id']);?>" class="confirm ajax-get">删除</a>
+						</td>
+				</tr><?php endforeach; endif; else: echo "" ;endif; ?>
+			</tbody>
+		</table>
 	</div>
-
 	<!-- 分页 -->
     <div class="page">
         <?php echo ($_page); ?>
     </div>
-</div>
 
 
         </div>
@@ -371,6 +381,14 @@ $(function(){
 		})
 	});
 
+	//只有一个模型时，点击新增
+	$('#document_add').click(function(){
+		var url = $(this).attr('url');
+		if(url != undefined && url != ''){
+			window.location.href = url;
+		}
+	});
+
     //回车自动提交
     $('.search-form').find('input').keyup(function(event){
         if(event.keyCode===13){
@@ -392,7 +410,6 @@ $(function(){
         autoclose:true,
         pickerPosition:'bottom-left'
     })
-    
 })
 </script>
 

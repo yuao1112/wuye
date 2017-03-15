@@ -121,7 +121,7 @@
 						<td><?php echo ($channel["address"]); ?></td>
 						<td><?php echo ($channel["content"]); ?></td>
 						<td><?php echo (time_format($channel["create_time"])); ?></td>
-						<td><?php echo ($channel["status"]); ?></td>
+						<td><?php echo (getstatus($channel["status"])); ?></td>
 						<td>
 							<a title="编辑" href="<?php echo U('edit?id='.$channel['id'].'&pid='.$pid);?>">编辑</a>
 							<a href="<?php echo U('setStatus?ids='.$channel['id'].'&status='.abs(1-$channel['status']));?>" class="ajax-get"><?php echo (show_status_op($channel["status"])); ?></a>

@@ -85,7 +85,7 @@
         
 <section>
 	<div class="span12">
-        <form class="login-form" action="/index.php?s=/home/user/login.html" method="post">
+        <form class="login-form" action="/index.php?s=/Home/User/login.html" method="post">
           <div class="control-group">
             <label class="control-label" for="inputEmail">用户名</label>
             <div class="controls">
